@@ -1,0 +1,14 @@
+body {
+  font-family: Arial;
+  margin-left: 16px;
+}
+
+article {
+  border: 1px solid;
+  margin: 16px 0;
+  padding: 12px;
+}
+
+a {
+ margin-right: 16px;
+}

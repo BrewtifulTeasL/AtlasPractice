@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Атлас языковых моделей</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <p><a href="#numb">АТЛАС</a></p>
+    <nav>
+    <a href="#collection">Коллекция</a>
+    <a href="#tests">О тестах</a>
+    <a href="#prompts">Промпты</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="numb">
+      <p>Цифровая выставка</p>
+      <h1>Атлас языковых моделей</h1>
+      <p>Открой карточки и сравни результаты тестов.</p>
+      <a href="#collection">Смотреть коллекцию</a>
+    </section>
+
+    <section id="collection">
+      <h2>Коллекция моделей</h2>
+      <p>Найди модель по названию или разработчику. Для сравнения выбери две карточки.</p>
+
+      <a>Найти модель</a>
+      <input placeholder="Название или разработчик" disabled>
+      <p>Задача</p>
+      <label><input type="radio" checked disabled> Все</label>
+      <label><input type="radio" disabled> Текст</label>
+      <label><input type="radio" disabled> Код</label>
+      <label><input type="radio" disabled> Анализ</label>
+      <label><input type="radio" disabled> Учёба</label>
+      <article>
+        <img src="assets/images/claude.png" alt="Anthropic" width="48" height="48">
+      <h3>Claude Fable 5.1</h3>
+        <p>Anthropic</p>
+        <p>Работа с длинными текстами и кодом.</p>
+        <p>Задачи: текст, код, анализ.</p>
+        <p>Доступ через сервис.</p>
+        <details>
+          <p>Подробнее</p>
+          <p>Например, разобрать длинную статью или найти ошибку в программе.</p>
+          <p><a href="https://www.anthropic.com/claude-fable-and-mythos-5-1" rel="noopener noreferrer">Описание Claude Fable 5.1 от разработчика</a></p>
+        </details>
+        <button disabled>К сравнению</button>
+      </article>
+
+      <article>
+        <img src="assets/images/openai.png" alt="OpenAI" width="48" height="48">
+          <h3>GPT-6 Astra</h3>
+        <p>OpenAI</p>
+        <p>Помощь с кодом, разбором файлов и объяснением тем.</p>
+      <p>Задачи: код, анализ, учёба.</p>
+        <p>Доступ через сервис.</p>
+        <details>
+          <p>Подробнее</p>
+          <p>Например, объяснить учебную тему или разобрать небольшой проект.</p>
+          <p><a href="https://openai.com/index/gpt-6-astra/" rel="noopener noreferrer">Описание GPT-6 Astra от разработчика</a></p>
+        </details>
+        <button type= disabled>К сравнению</button>
+      </article>
+
+      <article>
+        <img src="assets/images/gemini.png" alt="Google" width="48" height="48">
+        <h3>Gemini 3.8 Flash</h3>
+        <p>Google</p>
+        <p>Быстрая модель Google для чата и задач с кодом.</p>
+      <p>Задачи: текст, код, учёба.</p>
+        <p>Доступ через сервис.</p>
+        <details>
+          <p>Подробнее</p>
+          <p>Например, составить план текста или объяснить фрагмент кода.</p>
+          <p><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" rel="noopener noreferrer">Описание Gemini 3.8 Flash от разработчика</a></p>
+        </details>
+        <button type= disabled>К сравнению</button>
+      </article>
+
+      <article>
+        <img src="assets/images/deepseek.png" alt="DeepSeek" width="48" height="48">
+        <h3>DeepSeek-V4.1-Flash</h3>
+        <p>DeepSeek</p>
+        <p>Принимает текст и изображения. Отвечает текстом.</p>
+        <p>Задачи: текст, код, анализ.</p>
+        <p>Веса доступны.</p>
+        <details>
+          <p>Подробнее</p>
+          <p>Например, разобрать текст и задать вопросы по изображению.</p>
+          <p><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash" rel="noopener noreferrer">Описание DeepSeek-V4.1-Flash от разработчика</a></p>
+        </details>
+        <button type= disabled>К сравнению</button>
+      </article>
+
+      <article>
+        <img src="assets/images/qwen.png" alt="Qwen" width="48" height="48">
+        <h3>Qwen3.8-Flash-Next</h3>
+        <p>Qwen</p>
+        <p>Экспериментальная модель с доступными весами.</p>
+        <p>Задачи: код, анализ.</p>
+        <p>Веса доступны (предварительная версия).</p>
+        <details>
+          <p>Подробнее</p>
+          <p>Например, проверить работу модели на своей задаче с текстом или кодом.</p>
+          <p><a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next" rel="noopener noreferrer">Описание Qwen3.8-Flash-Next от разработчика</a></p>
+        </details>
+        <button type= disabled>К сравнению</button>
+      </article>
+
+      <article>
+        <img src="assets/images/mistral.png" alt="Mistral AI" width="48" height="48">
+        <h3>Mistral Medium 3.5</h3>
+        <p>Mistral AI</p>
+        <p>Помощь с кодом, документами и изображениями.</p>
+        <p>Задачи: код, анализ, учёба.</p>
+        <p>Веса доступны.</p>
+        <details>
+          <p>Подробнее</p>
+          <p>Например, разобрать документ или предложить исправление кода.</p>
+          <p><a href="https://docs.mistral.ai/models/mistral-medium-3-5-26-04" rel="noopener noreferrer">Описание Mistral Medium 3.5 от разработчика</a></p>
+        </details>
+        <button type= disabled>К сравнению</button>
+      </article>
+
+      <p>Для сравнения выбрано 0 из 2 моделей.</p>
+      <button type= disabled>Сравнить 2 модели</button>
+
+    <h2>О результатах тестов</h2>
+  <section id="tests">
+    <p>Сравнивай оценки за один и тот же тест</p>
+    <p>В примере используются результаты Artificial Analysis.</p>
+
+    <p><strong>AA-LCR v1.1:</strong> проверяет ответы на вопросы по длинным документам. Результат показывает долю правильных ответов.</p>
+    <p><strong>AA-Omniscience Accuracy:</strong> показывает долю правильных ответов на фактические вопросы среди всех вопросов теста.</p>
+
+    <details>
+      <p>Пример сравнения двух моделей</p>
+      <table>
+        <a>Результаты Artificial Analysis</a>
+          <tr><th scope="row">Тест</th>
+            <th scope="row">Claude Fable 5.1</th>
+            <th scope="row">GPT-6 Astra</th></tr>
+          <tr><th scope="row">AA-LCR v1.1</th>
+            <td>85%</td>
+            <td>81%</td></tr>
+          <tr><th scope="row">AA-Omniscience Accuracy</th>
+            <td>67%</td>
+            <td>63%</td></tr>
+      </table>
+      <p>Эти числа не обещают такой же результат в обычном чате, общий балл из двух тестов не рассчитывается.</p>
+      <p>Источники: <a href="https://artificialanalysis.ai/evaluations/artificial-analysis-long-context-reasoning">AA-LCR v1.1</a>,
+        <a href="https://artificialanalysis.ai/evaluations/omniscience">AA-Omniscience</a>,
+        <a href="https://artificialanalysis.ai/models/gpt-6-astra">результаты моделей</a>.</p>
+      <!-- <p>Дата публикации в источнике нету.</p> -->
+      <p>О GPT-6 Astra: <a href="https://openai.com/index/gpt-6-astra/">openai.com/index/gpt-6-astra/</a></p>
+    </details>
+
+    <section id="prompts">
+      <h2>Составить промпт</h2>
+      <p>Выбери задачу и напиши тему.</p>
+      <p>Задача
+        <select required>
+          <option>Разобраться в теме</option>
+          <option>Подготовиться к зачёту</option>
+          <option">Разобрать текст</option>
+          <option>Написать материал</option>
+          <option>Разобрать код</option>
+        </select></p>
+      <p><label for="down">Тема</label>
+        <input id="down" type="text" required maxlength="120" placeholder="Например, основы HTML"></p>
+      <button type="submit">Проверить заполнение</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Атлас языковых моделей</p>
+  </footer>
+</body>
+</html>
