@@ -8,12 +8,12 @@
   <script src="js/script.js" defer></script>
 </head>
 <body>
-  <header>
-    <p><a href="#numb">АТЛАС</a></p>
-    <nav>
-    <a href="#collection">Коллекция</a>
-    <a href="#tests">О тестах</a>
-    <a href="#prompts">Промпты</a>
+  <header class="header">
+    <p><a href="#numb" class="logo">АТЛАС</a></p>
+    <nav class="nav">
+      <a href="#collection">Коллекция</a>
+      <a href="#tests">О тестах</a>
+      <a href="#prompts">Промпты</a>
     </nav>
   </header>
 
@@ -29,14 +29,16 @@
       <h2>Коллекция моделей</h2>
       <p>Найди модель по названию или разработчику. Для сравнения выбери две карточки.</p>
 
-      <a>Найти модель</a>
-      <input placeholder="Название или разработчик" disabled>
-      <p>Задача</p>
+      <p>Найти модель</p>
+      <input class="search" placeholder="Название или разработчик" disabled>
+      <section class="filter">
       <label><input type="radio" checked disabled> Все</label>
       <label><input type="radio" disabled> Текст</label>
       <label><input type="radio" disabled> Код</label>
       <label><input type="radio" disabled> Анализ</label>
       <label><input type="radio" disabled> Учёба</label>
+      </section>
+      <section id="cards">
       <article>
         <img src="assets/images/claude.png" alt="Anthropic" width="48" height="48">
       <h3>Claude Fable 5.1</h3>
@@ -64,7 +66,7 @@
           <p>Например, объяснить учебную тему или разобрать небольшой проект.</p>
           <p><a href="https://openai.com/index/gpt-6-astra/" rel="noopener noreferrer">Описание GPT-6 Astra от разработчика</a></p>
         </details>
-        <button type= disabled>К сравнению</button>
+        <button type=disabled>К сравнению</button>
       </article>
 
       <article>
@@ -126,7 +128,7 @@
         </details>
         <button type= disabled>К сравнению</button>
       </article>
-
+      </section>
       <p>Для сравнения выбрано 0 из 2 моделей.</p>
       <button type= disabled>Сравнить 2 модели</button>
 
@@ -163,6 +165,7 @@
     <section id="prompts">
       <h2>Составить промпт</h2>
       <p>Выбери задачу и напиши тему.</p>
+      <section id="form">
       <p>Задача
         <select>
           <option>Разобраться в теме</option>
@@ -174,6 +177,7 @@
       <p><label>Тема</label>
         <input id="down" type="text" maxlength="120" placeholder="Например, основы HTML"></p>
       <button type="submit">Проверить заполнение</button>
+      </section>
     </section>
   </main>
 
