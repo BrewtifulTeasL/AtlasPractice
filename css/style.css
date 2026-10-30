@@ -1,19 +1,28 @@
+:root {
+  --bg: #0f0d0d;
+  --card-bg: #2b2a2a;
+  --text: #ffffff;
+  --article: #d7d1d1;
+  --space: 16px;
+  --radius: 8px;
+}
+
 body {
-  background-color :#0F0D0D;
+  background-color: var(--bg);
   font-family: Arial;
-  margin-left: 16px;
-  color: #ffffff;
+  margin-left: var(--space);
+  color: var(--text);
 }
 
 article {
-  background-color: #2B2A2A;
+  background-color: var(--card-bg);
   border: 2px solid #312b2b;
   border-radius: 14px;
   padding: 35px 45px;
 }
 
 a {
- margin-right: 16px;
+ margin-right: var(--space);
 }
 
 .header {
@@ -25,7 +34,7 @@ a {
 }
 
 .logo {
-  color: #ffffff;
+  color: var(--text);
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 3px; /* отступ между букв */
@@ -39,7 +48,7 @@ a {
 }
 
 .nav a {
-  color: #ffffff;
+  color: var(--text);
   text-decoration: none;
 }
 
@@ -78,7 +87,7 @@ article h3 {
 }
 
 article p {
-  color: #d7d1d1;
+  color: var(--article);
   font-size: 16px;
   margin: 6px 0px;
 }
@@ -92,7 +101,7 @@ details {
 
 article button {
   background: none;
-  color: #ffffff;
+  color: var(--text);
   border: 1px solid #7d7878;
   border-radius: 6px;
   padding: 10px 15px;
@@ -108,7 +117,7 @@ button {
   background-color: #D0D0D0;
   color: #1E1E1E;
   border: 1px solid #F5F5F5;
-  border-radius: 8px;
+  border-radius: var(--radius);
   padding: 14px 20px;
   font-size: 16px;
 }
@@ -117,7 +126,7 @@ select, input {
   background-color: #262626;
   color: #fff;
   border: 1px solid #444444;
-  border-radius: 8px;
+  border-radius: var(--radius);
   padding: 14px;
   font-size: 16px;
 }
@@ -168,7 +177,7 @@ footer {
   background-color: #D0D0D0;
   color: #1E1E1E;
   border: 1px solid #F5F5F5;
-  border-radius: 8px;
+  border-radius: var(--radius);
   padding: 18px 50px;
   text-decoration: none;
 }
@@ -200,7 +209,7 @@ footer {
 .search {
   width: calc(100% - 27px);
   max-width: 590px;
-  margin-bottom: 16px;
+  margin-bottom: var(--space);
 }
 
 .filter {
@@ -211,12 +220,17 @@ footer {
   display: none;
 }
 
+.filter label:has(input:checked) {
+  background-color: #21707b;
+  color: #f8e8e8;
+}
+
 .filter label {
   display: inline-block;
   background-color: #444444;
   color: #B3B3B3;
   border: 1px solid #4f4a4a;
-  border-radius: 8px;
+  border-radius: var(--radius);
   padding: 8px 14px;
   margin: 4px 2px;
 }
@@ -235,4 +249,21 @@ footer {
 
 #tests a {
   color: #179271;
+}
+
+button:disabled, input:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+article button:hover {
+  background-color: #d7d1d158;
+}
+
+button:hover, #numb a:hover {
+  background-color: #b1adad;
+}
+
+#numb a:active, button:active {
+  background-color: #bfb9b9ca;
 }
